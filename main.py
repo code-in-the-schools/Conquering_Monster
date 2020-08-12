@@ -69,7 +69,7 @@ class Player(object):
   
   def HealthBar(self,screen):
     Attacks = ['Punch', 'Block']
-    MonsterAttack = random.randint(5,100)
+    MonsterAttack = random.randrange(10)
     MonsterHealth = 100
     PlayerHealth = 100
     Fighting = True
