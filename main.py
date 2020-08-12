@@ -98,6 +98,8 @@ class Player(object):
       if MonsterHealth == 0:
         print('CONGRADULATIONS you have defated the monster!Advaced to next level')
         
+       if PlayerHealth == 0:
+          print('You Lose')
         Fighting = False
 
 
@@ -141,6 +143,7 @@ while running:
         if event.type == pygame.QUIT:
             pygame.quit()
             running = False 
+                  
                   
     screen.fill((255, 255, 255))
     Players.draw(screen)
